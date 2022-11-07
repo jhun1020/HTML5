@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>양식 제출 관련 태그</title>
+  </head>
+  <body>
+    <h3>form 태그</h3>
+    <form action="">
+      <!-- 단일태그 -->
+      <input type="text" name="search" id="search" />
+      &nbsp;
+      <input type="submit" value="검색하기" />
+    </form>
+    <p>
+      input 태그에 값을 적으면 서버로 전달할 때에 name속성의 이름으로 값을 담아
+      전달하며, 이를 전달하려면 반드시 submit 요소를 사용해야 한다.
+    </p>
+    <hr />
+    <form action="">
+      <fieldset>
+        <legend>필드셋 제목 1</legend>
+        입력 1 : <input type="text" /> <br />
+        입력 2 : <input type="text" /> <br />
+        입력 3 : <input type="text" /> <br />
+      </fieldset>
+    </form>
+    <hr />
+    <h3>문자 관련 input태그들</h3>
+    <form action="">
+      <h4>type = text</h4>
+      <input type="text" name="memberId" placeholder="키워드작성" /> <br />
+      <!-- placeholder="원하는문구"  검색바에 원하는 문구 미리보기 출력-->
+      <!-- <input type="text" name="memberId"  required/> <br />  required = not null의 조건 추가-->
+
+      <h4>type = password</h4>
+      <input type="password" name="password" />
+
+      <h4>submit / reset</h4>
+      <input type="submit" value="제출" />
+
+      <input type="reset" value="작성취소" />
+    </form>
+    <hr />
+    <h3>숫자 관련 input 태그</h3>
+    <h4>type = number</h4>
+    <input type="number" max="100" min="10" step="2" value="1" />
+    <!-- step는 버튼 한번에 오르내리는 숫자   -->
+    <!-- value 는 시작값 -->
+    <p>
+      입력창에 스핀형태로 표시되나, 웹브라우저에 따라 표현되는 모양이 다를 수
+      있다.
+    </p>
+    <br />
+    <h4>type = range</h4>
+    <input type="range" max="10" min="0" step="2" />
+    <p>슬라이드 바 형태로 숫자 지정이 가능하다.</p>
+    <hr />
+    <form action="">
+      <h3>날짜 관련 input 태그</h3>
+      <h4>type = date | month | week | time | datetime-local |</h4>
+      <label for="date"> date : </label> <input type="date" />
+      <label for="month"> month : </label> <input type="month" />
+      <label for="week"> week : </label> <input type="week" />
+      <label for="time"> time : </label> <input type="time" />
+      <label for="datetime-local"> datetime-local : </label>
+      <input type="datetime-local" />
+      <input type="datetime-local" id="datetime-local" />
+    </form>
+    <hr />
+
+    <h3>라디오 & 체크박스 버튼</h3>
+    <h3>라디오 버튼</h3>
+    <input type="radio" name="gender1" value="M" /> 남성
+    <input type="radio" name="gender2" value="F" /> 여성
+    <!-- name이 다르면 각자 다른선택으로 인식 -->
+    <h3>체크박스 버튼</h3>
+    <input type="checkbox" name="genre" id="호러" value="" />
+    <label for="호러">호러</label> <br />
+    <input type="checkbox" name="genre" id="로코" value="" />
+    <label for="로코">로맨틱 코미디</label> <br />
+    <input type="checkbox" name="genre" id="SF" value="" />
+    <label for="SF">SF</label> <br />
+    <hr />
+    <h3>
+      <a href="./0_index.html">처음으로 돌아가기</a>
+    </h3>
+
+    <h3>기타 input 종류들</h3>
+    <h4>type = color</h4>
+    색상 선택 : <input type="color" /> <br />
+
+    <h4>type = file</h4>
+    파일 선택 : <input type="file" /> <br />
+
+    <h4>type = hidden</h4>
+    안보이는 태그 : <input type="hidden" /> <br />
+  </body>
+</html>

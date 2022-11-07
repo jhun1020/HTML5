@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>시맨틱 태그</title>
+    <style>
+      body {
+        width: 500px;
+      }
+      header,
+      section,
+      article,
+      aside,
+      footer {
+        display: block;
+      }
+      section {
+        float: left;
+        width: 300px;
+        height: 400px;
+        background: bisque;
+      }
+      article {
+        width: 300px;
+        background: honeydew;
+      }
+      aside {
+        float: right;
+        width: 190px;
+        height: 400px;
+        background: skyblue;
+      }
+      footer {
+        /* overflow: hidden; */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <header></header>  웹 문서의 머릿글 부분
+    <section></section>     웹 문서의 주요 주제 관련 내용
+        <article><article>      주제 관련 세부내용 (첫 번째 주제, 두 번째 주제)
+    <aside></aside>         덜중요하거나 관련없는내용 
+    <footer></footer>       웹 문서의 저자, 저작권 정보 등을 명시하는 바닥글내용을 작성하는 영역
+       ++ <nav> : 메뉴        -->
+
+    <header>
+      <h1>이정훈's Hompage!</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="0_index.html">Home</a>
+          </li>
+          <li>공지사항</li>
+          <li>게시판</li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <p></p>
+      <article>첫번째 주제!</article>
+      <article>두번재 주제입니다.</article>
+      <article>
+        <p>세번째 주제입니다</p>
+      </article>
+    </section>
+    <aside>
+      <p>머리가 자주 빠지신다구요?</p>
+      <p>
+        항상 아침에 거울 보기 두려우시다구요? 그런 분들을 위해 준비했습니다!
+      </p>
+      <p>한 줌조차 미련없이, 깔끔함과 시원함을 한 번에 이발 가위,</p>
+      <p>올 커트를만나보세요!!</p>
+    </aside>
+    <footer>
+      Copyright by Class, All right reserved <br />
+      본 문서는 수업 페이지입니다.
+    </footer>
+
+    <hr />
+    <h2>
+      <a href="./0_index.html">처음으로 돌아가기</a>
+    </h2>
+  </body>
+</html>
